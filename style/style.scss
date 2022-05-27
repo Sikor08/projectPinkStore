@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+// imports
+@import 'blocks/headerStyle';
+
+// variables
+
+$wrapperWidth: 1140px;
+$blackColor: #222222;
+$mainColor: #F16D7F;
+
+
+.wrapper{
+    max-width: $wrapperWidth;
+    margin:0 auto;  
+}
+
+
+section{
+    outline: 1px solid black;
+}
+
+.promo-container{
+    display: flex;
+    align-items: center;
+    background-color: rgba(241, 228, 230, 1);
+    height: 765px;
+    background-image: url(../img/man-promo.png);
+   background-repeat: no-repeat;
+   background-position-x: 155px;
+   border: 2px solid #000;
+
+}
+
+    .promo{
+        border: 2px solid green;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+
