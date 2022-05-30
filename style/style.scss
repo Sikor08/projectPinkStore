@@ -15,6 +15,7 @@ $mainColor: #F16D7F;
 
 .wrapper{
     max-width: $wrapperWidth;
+    min-width: 320px;
     margin:0 auto;  
 }
 
@@ -24,21 +25,26 @@ section{
 }
 
 .promo-container{
-    display: flex;
-    align-items: center;
-    background-color: rgba(241, 228, 230, 1);
-    height: 765px;
-    background-image: url(../img/man-promo.png);
-   background-repeat: no-repeat;
-   background-position-x: 155px;
-   border: 2px solid #000;
 
+    background-color: rgba(241, 228, 230, 1);
+    
+}
+.promo{
+    min-height: 363px;
+    display: flex;
+    justify-content: center;
+    &__right{
+        display: flex;
+        align-items: center;
+    }
 }
 
-    .promo{
-        border: 2px solid green;
-        display: flex;
-        justify-content: flex-end;
+@media (max-width: 768px){
+    .promo__left{
+        display: none;
+        
     }
+
+}
 
 
