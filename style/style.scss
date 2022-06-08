@@ -5,12 +5,14 @@
 
 // imports
 @import 'blocks/headerStyle';
+@import 'blocks/promo.scss';
 
 // variables
 
 $wrapperWidth: 1140px;
 $blackColor: #222222;
-$mainColor: #F16D7F;
+$pinkColor: #F16D7F;
+$mobileWidth: 768px;
 
 
 .wrapper{
@@ -19,32 +21,5 @@ $mainColor: #F16D7F;
     margin:0 auto;  
 }
 
-
-section{
-    outline: 1px solid black;
-}
-
-.promo-container{
-
-    background-color: rgba(241, 228, 230, 1);
-    
-}
-.promo{
-    min-height: 363px;
-    display: flex;
-    justify-content: center;
-    &__right{
-        display: flex;
-        align-items: center;
-    }
-}
-
-@media (max-width: 768px){
-    .promo__left{
-        display: none;
-        
-    }
-
-}
 
 

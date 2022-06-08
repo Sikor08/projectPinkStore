@@ -1,0 +1,139 @@
+.promo-container{
+
+    background-color: rgba(241, 228, 230, 1);
+    // position: relative;
+   
+    
+}
+
+.promo{
+   
+    height: 764px;
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+    background-image: url(../img/manPromo.png);
+    background-repeat: no-repeat;
+    background-position-x: -235px;
+    &__right{
+        display: grid;
+        align-items: center;
+        grid-column: none;
+        padding-right: 20px;
+        color: #222222;
+    }
+}
+.promoTextWrap{
+    margin-right: 50px;
+    border-left: 12px solid#F16D7F;
+    padding-left: 16px;
+}
+.promoTextWrap div:first-child{
+    font-family: 'Lato', sans-serif;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 58px;
+}
+.promoTextWrap div:last-child{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 38px;
+}
+.promoTextWrap span{
+    color: #F16D7F;
+
+}
+
+.hidden{
+    display: none;
+}
+.menu{
+    position: relative;
+    // position: absolute;
+    top: -764px;
+    width: 232px;
+    height: 764px;
+    background: white;
+    margin-left: auto;
+    padding: 37px 24px;
+    box-sizing: border-box;
+    &__title{
+        font-family: 'Lato', sans-serif;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 17px;
+        color: #000000;
+        margin-bottom: 24px;
+    }
+    &__unit a{
+        display: block;
+        text-decoration: none;
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 28px;
+        color: #6F6E6E;
+        margin-left: 21px;
+    }
+    &__heading{
+        font-family: 'Lato', sans-serif;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 33px;
+        color: #F16D7F;
+    }
+    &__close{
+        position: absolute;
+        right: 16px;
+        top: 16px;
+    }
+}
+
+// tablet
+@media (max-width: 1024px) {
+    .menu{
+        display: none;
+    }
+    .promoTextWrap{
+        margin: auto;
+    }
+    .promoTextWrap div:first-child{
+        font-size: 44px;
+        line-height: 52px;
+        
+    }
+    .promoTextWrap div:last-child{
+        font-size: 24px;
+        line-height: 29px;
+    }
+}
+// mobile
+@media (max-width: 768px){
+    .menu{
+        display: none;
+    }
+    .promo-container{
+        display: flex;
+        
+    }
+    .promo{
+        height: 363px;
+        background-image: none;
+        &__left{
+            display: none;
+        }
+        // &__right{
+        //     flex-grow: 100;
+        //     padding: 0;
+        // }
+    }
+    .promoTextWrap div:first-child{
+        font-size: 38px;
+        line-height: 45px;
+    }
+    .promoTextWrap div:last-child{
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+}
