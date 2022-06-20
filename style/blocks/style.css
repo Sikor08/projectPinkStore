@@ -78,75 +78,18 @@
 
 .promo-container {
   background-color: #f1e4e6;
-  position: relative;
 }
 
 .promo {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
   height: 764px;
-}
-
-.promo__left {
-  background: url(/img/manPromo.png);
-  background-position-x: -228px;
-  background-repeat: no-repeat;
-  height: 764px;
-}
-
-.promo__right {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.menu {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-}
-
-.menu__close {
-  position: absolute;
-  top: 16px;
-  right: 16px;
-}
-
-.promoTextWrap {
-  margin-right: 50px;
-  border-left: 12px solid #F16D7F;
-  padding-left: 16px;
-}
-
-.promoTextWrap div:first-child {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 58px;
-}
-
-.promoTextWrap div:last-child {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-}
-
-.promoTextWrap span {
-  color: #F16D7F;
 }
 
 .hidden {
   display: none;
 }
 
-.menu {
-  width: 234px;
+.div {
+  width: 232px;
   height: 764px;
   background: white;
   margin-left: auto;
@@ -155,7 +98,7 @@
           box-sizing: border-box;
 }
 
-.menu__title {
+.div__title {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -164,7 +107,7 @@
   margin-bottom: 24px;
 }
 
-.menu__unit a {
+.div__unit a {
   display: block;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
@@ -175,7 +118,7 @@
   margin-left: 21px;
 }
 
-.menu__heading {
+.div__heading {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -183,13 +126,16 @@
   color: #F16D7F;
 }
 
-.menu__close {
+.div__close {
   position: absolute;
 }
 
 @media (max-width: 1024px) {
-  .promo__left {
+  .menu {
     display: none;
+  }
+  .promoTextWrap {
+    margin: auto;
   }
   .promoTextWrap div:first-child {
     font-size: 44px;
@@ -202,6 +148,9 @@
 }
 
 @media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
   .promo-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -214,11 +163,6 @@
   .promo__left {
     display: none;
   }
-  .promo__right {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
   .promoTextWrap div:first-child {
     font-size: 38px;
     line-height: 45px;
@@ -230,7 +174,7 @@
 }
 
 .wrapper {
-  max-width: 1140px;
+  width: 1140px;
   min-width: 320px;
   margin: 0 auto;
 }
@@ -337,5 +281,9 @@
   .offer__for-accesories {
     grid-column: 1/-1;
   }
+}
+
+.promo {
+  height: 764px;
 }
 /*# sourceMappingURL=style.css.map */

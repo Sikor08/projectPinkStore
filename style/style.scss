@@ -5,7 +5,7 @@
 
 // imports
 @import 'blocks/headerStyle';
-@import 'blocks/promo.scss';
+@import 'blocks/promoStyle';
 
 // variables
 
@@ -20,6 +20,82 @@ $mobileWidth: 768px;
     min-width: 320px;
     margin:0 auto;  
 }
+
+.offer{
+   
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(3, 247px) 116px;
+    row-gap: 32px;
+    padding: 64px 16px;
+ &__for-women{
+    background-image: url(../img/fofWomen.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+}
+&__for-men{
+    background-image: url(../img/forMen.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+&__for-kids{
+    background-image: url(../img/forKids.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+&__for-accesories{
+    background-image: url(../img/accesories.jpg);
+    background-size: cover ;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+&__title-top{
+    font-family: 'Lato', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    color: #FFFFFF;
+}
+&__title-buttom{
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    color: $pinkColor;
+}
+
+}
+@media (min-width: 768px) {
+    .offer{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 167px 116px;
+        gap: 20px;
+        &__for-accesories{
+            grid-column: 1/-1;
+        }
+    }
+}
+
+
+
+
 
 
 

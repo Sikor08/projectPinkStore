@@ -1,25 +1,33 @@
 .promo-container{
-
     background-color: rgba(241, 228, 230, 1);
-    // position: relative;
-   
-    
+    position: relative;
 }
 
 .promo{
-   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     height: 764px;
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-    background-image: url(../img/manPromo.png);
-    background-repeat: no-repeat;
-    background-position-x: -235px;
+    &__left{
+        background: url(/img/manPromo.png);
+        background-position-x: -228px;
+        background-repeat: no-repeat;
+        height: 764px;
+    }
     &__right{
-        display: grid;
+        display: flex;
         align-items: center;
-        grid-column: none;
-        padding-right: 20px;
-        color: #222222;
+       
+    }
+}
+
+.menu{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    &__close{
+        position: absolute;
+        top: 16px;
+        right: 16px;
     }
 }
 .promoTextWrap{
@@ -47,11 +55,9 @@
 .hidden{
     display: none;
 }
+
 .menu{
-    position: relative;
-    // position: absolute;
-    top: -764px;
-    width: 232px;
+    width: 234px;
     height: 764px;
     background: white;
     margin-left: auto;
@@ -84,19 +90,16 @@
     }
     &__close{
         position: absolute;
-        right: 16px;
-        top: 16px;
+      
     }
 }
 
 // tablet
 @media (max-width: 1024px) {
-    .menu{
+    .promo__left{
         display: none;
     }
-    .promoTextWrap{
-        margin: auto;
-    }
+
     .promoTextWrap div:first-child{
         font-size: 44px;
         line-height: 52px;
@@ -109,9 +112,6 @@
 }
 // mobile
 @media (max-width: 768px){
-    .menu{
-        display: none;
-    }
     .promo-container{
         display: flex;
         
@@ -122,10 +122,9 @@
         &__left{
             display: none;
         }
-        // &__right{
-        //     flex-grow: 100;
-        //     padding: 0;
-        // }
+        &__right{
+            justify-content: center;
+        }
     }
     .promoTextWrap div:first-child{
         font-size: 38px;

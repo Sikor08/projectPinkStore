@@ -4,57 +4,13 @@
 
 .promo {
   height: 764px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  background-image: url(../img/manPromo.png);
-  background-repeat: no-repeat;
-  background-position-x: -235px;
-}
-
-.promo__right {
-  display: -ms-grid;
-  display: grid;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  grid-column: none;
-  padding-right: 20px;
-  color: #222222;
-}
-
-.promoTextWrap {
-  margin-right: 50px;
-  border-left: 12px solid #F16D7F;
-  padding-left: 16px;
-}
-
-.promoTextWrap div:first-child {
-  font-family: 'Lato', sans-serif;
-  font-weight: 900;
-  font-size: 48px;
-  line-height: 58px;
-}
-
-.promoTextWrap div:last-child {
-  font-family: 'Lato', sans-serif;
-  font-weight: 700;
-  font-size: 32px;
-  line-height: 38px;
-}
-
-.promoTextWrap span {
-  color: #F16D7F;
 }
 
 .hidden {
   display: none;
 }
 
-.menu {
-  position: relative;
-  top: -764px;
+.div {
   width: 232px;
   height: 764px;
   background: white;
@@ -64,7 +20,7 @@
           box-sizing: border-box;
 }
 
-.menu__title {
+.div__title {
   font-family: 'Lato', sans-serif;
   font-weight: 700;
   font-size: 14px;
@@ -73,7 +29,7 @@
   margin-bottom: 24px;
 }
 
-.menu__unit a {
+.div__unit a {
   display: block;
   text-decoration: none;
   font-family: 'Lato', sans-serif;
@@ -84,7 +40,7 @@
   margin-left: 21px;
 }
 
-.menu__heading {
+.div__heading {
   font-family: 'Lato', sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -92,10 +48,8 @@
   color: #F16D7F;
 }
 
-.menu__close {
+.div__close {
   position: absolute;
-  right: 16px;
-  top: 16px;
 }
 
 @media (max-width: 1024px) {
